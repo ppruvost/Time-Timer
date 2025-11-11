@@ -23,13 +23,13 @@ function drawTimer(percentage) {
   ctx.lineWidth = 4;
   ctx.stroke();
 
-  // Secteur rouge (temps restant)
+  // Secteur bleu (temps restant)
   const endAngle = -Math.PI / 2 + 2 * Math.PI * percentage;
   ctx.beginPath();
   ctx.moveTo(center, center);
   ctx.arc(center, center, radius, -Math.PI / 2, endAngle, false);
   ctx.closePath();
-  ctx.fillStyle = "red";
+  ctx.fillStyle = "blue";
   ctx.fill();
 }
 
